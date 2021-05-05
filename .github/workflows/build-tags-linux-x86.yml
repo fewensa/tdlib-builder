@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-v1.7.0:
+  build-v1-7-0:
     runs-on: ubuntu-latest
 
     steps:
