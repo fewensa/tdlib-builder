@@ -23,11 +23,13 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=../tdlib ..
 cmake --build . --target install
 
 
-ls
+### copy
 
 PATH_OUT=${WORK_PATH}/x86_64/linux/${VERSION}
 mkdir -p ${PATH_OUT}
 
+ls ${BIN_PATH}/td/tdlib/lib/
+cp ${BIN_PATH}/td/td/generate/scheme/td_api.tl ${PATH_OUT}
 cp ${BIN_PATH}/td/tdlib/lib/*libtdjson.so* ${PATH_OUT}
 
 ls ${PATH_OUT}
