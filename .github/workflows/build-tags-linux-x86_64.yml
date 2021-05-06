@@ -22,4 +22,7 @@ jobs:
             sudo apt-get -qq install make git zlib1g-dev libssl-dev gperf php-cli cmake g++  > /dev/null
 
       - name: Build
-        run: sh -f .maintain/build-tags-linux-x86_64.sh v1.7.0
+        run: .maintain/build-tags-linux-x86_64.sh v1.7.0
+
+
+
